@@ -18,7 +18,7 @@
     <link rel="icon" type="image/x-icon" href="https://themewagon.gitlab.io/restaurant/assets/img/favicons/favicon-32x32.png">
     <!-- <link rel="stylesheet" href="swiper.css"> -->
 
-    <script src="jquery.js"></script>
+    <!-- <script src="jquery.js"></script> -->
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
@@ -290,7 +290,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-5 overflow-hidden ">
-            <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/plate.png" style="transform: rotate(60deg)" class="w-100">
+            <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/plate.png" style="transform: rotate(60deg)" class="w-100 plateimg">
         </div>
          </div>
       </div>
@@ -569,7 +569,7 @@
         </div>
         <div class="third-section-content ps-5  px-xl-5 mx-xl-5 pe-5">
             <img class="eggimg" src="https://themewagon.gitlab.io/restaurant/assets/img/food/egg.png" height="170px" width="200px">
-            <img class ="breadimg d-s-block d-none" src="https://themewagon.gitlab.io/restaurant/assets/img/food/bread.png" width="400px" height="100px">
+            <img class ="breadimg d-sm-block d-none" src="https://themewagon.gitlab.io/restaurant/assets/img/food/bread.png" width="400px" height="100px">
        
         <div class="third-section-data d-flex flex-lg-row flex-column">
             <div class="row1">
@@ -909,7 +909,7 @@
 
                     
                     </div>
-                    <img class="soupimg d-none d-xl-block"src="https://themewagon.gitlab.io/restaurant/assets/img/food/kisspng-soup.png" alt="soup" height="100px"width="130px">
+                    <img class="soupimg "src="https://themewagon.gitlab.io/restaurant/assets/img/food/kisspng-soup.png" alt="soup" height="100px"width="130px">
 
                   </div>
                 </div>
@@ -1249,27 +1249,6 @@
 //     // }
 //     // console.log(icons);
 //     }  
-
-$(document).ready(function () {
-$('#myCarousel').carousel({
-    interval: 10000
-})
-$('.fdi-Carousel .item').each(function () {
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    if (next.next().length > 0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-    }
-    else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-});
-});
-
 
   function reveal() {
     var reveals = document.querySelectorAll('.reveal');
